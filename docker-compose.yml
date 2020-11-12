@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  hugo:
+    image: klakegg/hugo:0.78.1-ext-ubuntu
+    command: server
+    container_name: hugo
+    hostname: hugo
+    volumes:
+      - ".:/src"
+    ports:
+      - "1313:1313"
