@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Borg Backups">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Borg" />
+<meta property="og:description" content="Borg Backups" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tonoriesco.github.io/docs/backup/borg/" />
+
+<title>Borg | </title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.0f40b4e83b0db00d11c595295e7f5f85f51436d20a5b6790534cb30c9f46a201.css" integrity="sha256-D0C06DsNsA0RxZUpXn9fhfUUNtIKW2eQU0yzDJ9GogE=">
+<script defer src="/en.search.min.e9a9d17bfe2b8fb61ce2377cebfc85144488e211ff4c26109ca70c5dc38f24f0.js" integrity="sha256-6anRe/4rj7Yc4jd86/yFFESI4hH/TCYQnKcMXcOPJPA="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://tonoriesco.github.io/docs/backup/borg/index.xml" title="" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/logo.png" alt="Logo" /><span></span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ec5a700af4f7f46e10356bb9b8ef7f32" class="toggle" checked />
+    <label for="section-ec5a700af4f7f46e10356bb9b8ef7f32" class="flex justify-between">
+      <a href="https://tonoriesco.github.io/docs/backup/" class="">Backup</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/backup/borg/" class=" active">Borg</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-090e5e9541fbf7abe3678403e1b40824" class="toggle"  />
+    <label for="section-090e5e9541fbf7abe3678403e1b40824" class="flex justify-between">
+      <a href="https://tonoriesco.github.io/docs/example/" class="">Examples Format</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a  class="">Collapsed</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8bb2d0b0a1e078885861823d6ef47132" class="toggle"  />
+    <label for="section-8bb2d0b0a1e078885861823d6ef47132" class="flex justify-between">
+      <a  class="">Shortcodes</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1c6a8516f710b6065a114907cef8489f" class="toggle"  />
+    <label for="section-1c6a8516f710b6065a114907cef8489f" class="flex justify-between">
+      <a href="https://tonoriesco.github.io/docs/example/shortcodes/section/" class="">Section</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/section/page1/" class="">Page1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/section/page2/" class="">Page2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tonoriesco.github.io/docs/example/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/tonoriesco" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://riesco.ch" target="_blank" rel="noopener">
+        Web Page
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Borg</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#main-features-of-borg-backup">Main features of Borg Backup</a>
+      <ul>
+        <li><a href="#space-efficient-storage">Space efficient storage</a></li>
+        <li><a href="#speed">Speed</a></li>
+        <li><a href="#data-encryption">Data encryption</a></li>
+        <li><a href="#compression">Compression</a></li>
+        <li><a href="#off-site-backups">Off-site backups</a></li>
+        <li><a href="#backups-mountable-as-filesystems">Backups mountable as filesystems</a></li>
+        <li><a href="#free-and-open-source-software">Free and Open Source Software</a></li>
+      </ul>
+    </li>
+    <li><a href="#install-borg">Install Borg</a></li>
+    <li><a href="#usages-of-borg">Usages of Borg</a>
+      <ul>
+        <li><a href="#borg-init">borg init</a></li>
+        <li><a href="#borg-create">borg create</a></li>
+        <li><a href="#borg-extract">borg extract</a></li>
+        <li><a href="#borg-check">borg check</a></li>
+      </ul>
+    </li>
+    <li><a href="#borg-rename">borg rename</a>
+      <ul>
+        <li><a href="#borg-list">borg list</a></li>
+      </ul>
+    </li>
+    <li><a href="#borg-delete">borg delete</a>
+      <ul>
+        <li><a href="#borg-prune">borg prune</a></li>
+        <li><a href="#borg-info">borg info</a></li>
+        <li><a href="#borg-mount">borg mount</a></li>
+        <li><a href="#borg-umount">borg umount</a></li>
+        <li><a href="#borg-key-export">borg key export</a></li>
+        <li><a href="#borg-key-import">borg key import</a></li>
+        <li><a href="#borg-change-passphrase">borg change-passphrase</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-key-file-protected-repository">Create a key file protected repository</a></li>
+    <li><a href="#change-key-file-passphrase">Change key file passphrase</a>
+      <ul>
+        <li><a href="#borg-break-lock">borg break-lock</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="description">
+  Description
+  <a class="anchor" href="#description">#</a>
+</h1>
+<p>Borg Backup (aka: Borg) is a deduplicating backup program that supports compression and authenticated encryption.The main goal of Borg is to provide an efficient and secure way to backup data. The data deduplication technique used in Borg backup makes it suitable for daily backups since only changes are stored and the authenticated encryption technique makes it suitable for backups to not fully trusted targets. This article covers installation and usage of Borg Backup in Ubuntu 16 and other Linux flavors.</p>
+<h1 id="main-features-of-borg-backup">
+  Main features of Borg Backup
+  <a class="anchor" href="#main-features-of-borg-backup">#</a>
+</h1>
+<h2 id="space-efficient-storage">
+  Space efficient storage
+  <a class="anchor" href="#space-efficient-storage">#</a>
+</h2>
+<ul>
+<li>Deduplication is based on content-defined chunking which is used to reduce the number of bytes stored. Each file is split into a number of variable length chunks and only chunks that have never been seen before are added to the repository.</li>
+<li>To deduplicate, all the chunks in the same repository are considered, no matter whether they come from different machines, from previous backups, from the same backup or even from the same single file.</li>
+<li>Compared to other deduplication approaches, the method used in borg does NOT depend on
+<ul>
+<li>File/Directory names staying the same: So you can move files and directories without killing the deduplication, even between machines sharing a repository.</li>
+<li>Complete files or time stamps staying the same: If a big file changes a little, only a few new chunks need to be stored - this is great for VMs or raw disks.</li>
+<li>The absolute position of a data chunk inside a file: Stuff may get shifted and will still be found by the deduplication algorithm.</li>
+</ul>
+</li>
+</ul>
+<h2 id="speed">
+  Speed
+  <a class="anchor" href="#speed">#</a>
+</h2>
+<ul>
+<li>Performance critical code (chunking, compression, encryption) is implemented in C/Cython</li>
+<li>Local caching of files/chunks index data</li>
+<li>Quick detection of unmodified files</li>
+</ul>
+<h2 id="data-encryption">
+  Data encryption
+  <a class="anchor" href="#data-encryption">#</a>
+</h2>
+<ul>
+<li>All data can be protected using 256-bit AES encryption, data integrity and authenticity is verified using HMAC-SHA256. Data is encrypted client side.</li>
+</ul>
+<h2 id="compression">
+  Compression
+  <a class="anchor" href="#compression">#</a>
+</h2>
+<ul>
+<li>All data can be compressed by lz4 (super fast, low compression), zlib (medium speed and compression) or lzma (low speed, high compression).</li>
+</ul>
+<h2 id="off-site-backups">
+  Off-site backups
+  <a class="anchor" href="#off-site-backups">#</a>
+</h2>
+<ul>
+<li>Borg can store data on any remote host accessible over SSH. If Borg is installed on the remote host, big performance gains can be achieved compared to using a network filesystem (sshfs, nfs, &hellip;).</li>
+</ul>
+<h2 id="backups-mountable-as-filesystems">
+  Backups mountable as filesystems
+  <a class="anchor" href="#backups-mountable-as-filesystems">#</a>
+</h2>
+<ul>
+<li>Backup archives are mountable as userspace filesystems for easy interactive backup examination and restores (e.g. by using a regular file manager).</li>
+</ul>
+<h2 id="free-and-open-source-software">
+  Free and Open Source Software
+  <a class="anchor" href="#free-and-open-source-software">#</a>
+</h2>
+<ul>
+<li>Security and functionality can be audited independently</li>
+<li>Licensed under the BSD (3-clause) license, see License for the complete license</li>
+</ul>
+<h1 id="install-borg">
+  Install Borg
+  <a class="anchor" href="#install-borg">#</a>
+</h1>
+<p>To install Borg backup in Ubuntu, execute the following command in the terminal.</p>
+<pre><code>#  sudo apt-get install borgbackup borgbackup-doc
+</code></pre>
+<p>You can also download borg binary from github and move it in a location pointed by PATH environment variable.</p>
+<pre><code># wget https://github.com/borgbackup/borg/releases/download/1.0.10/borg-linux64
+# mv borg-linux64 /usr/local/bin/borg
+# chmod u+x /usr/local/bin/borg
+# chown root:root /usr/local/bin/borg
+</code></pre>
+<h1 id="usages-of-borg">
+  Usages of Borg
+  <a class="anchor" href="#usages-of-borg">#</a>
+</h1>
+<p>Borg consists of a number of commands. Each command accepts a number of arguments and options. The following sections will describe each command in detail.</p>
+<h2 id="borg-init">
+  borg init
+  <a class="anchor" href="#borg-init">#</a>
+</h2>
+<p>Initialize a new backup repository and create a backup archive.</p>
+<pre><code># Local repository (default is to use encryption in repokey mode)
+borg init /path/to/repo
+
+# Local repository (no encryption)
+borg init --encryption=none /path/to/repo
+
+# Remote repository (accesses a remote borg via ssh)
+borg init user@hostname:backup
+
+# Remote repository (store the key your home dir)
+borg init --encryption=keyfile user@hostname:backup
+Use encryption as it will protect you in case an unauthorized user has access to the backup repository.
+</code></pre>
+<h2 id="borg-create">
+  borg create
+  <a class="anchor" href="#borg-create">#</a>
+</h2>
+<p>This command creates a borg backup archive containing all files found while recursively traversing all paths specified. When giving &lsquo;-&rsquo; as path, borg will read data from standard input and create a file &lsquo;stdin&rsquo; in the created archive from that data. The archive will consume almost no disk space for files or parts of files that have already been stored in other archives.</p>
+<pre><code># Backup ~/Documents into an archive named &quot;my-documents&quot;
+borg create /path/to/repo::my-documents ~/Documents
+
+# same, but verbosely list all files as we process them
+borg create -v --list /path/to/repo::my-documents ~/Documents
+
+# Backup ~/Documents and ~/src but exclude pyc files
+borg create /path/to/repo::my-files \
+~/Documents                       \
+~/src                             \
+--exclude '*.pyc'
+
+# Backup home directories excluding image thumbnails (i.e. only
+# /home/*/.thumbnails is excluded, not /home/*/*/.thumbnails)
+borg create /path/to/repo::my-files /home \
+--exclude 're:^/home/[^/]+/\.thumbnails/'
+
+# Do the same using a shell-style pattern
+borg create /path/to/repo::my-files /home \
+--exclude 'sh:/home/*/.thumbnails'
+
+# Backup the root filesystem into an archive named &quot;root-YYYY-MM-DD&quot;
+# use zlib compression (good, but slow) - default is no compression
+borg create -C zlib,6 /path/to/repo::root-{now:%Y-%m-%d} / --one-file-system
+
+# Make a big effort in fine granular deduplication (big chunk management
+# overhead, needs a lot of RAM and disk space, see formula in internals
+# docs - same parameters as borg &lt; 1.0 or attic):
+borg create --chunker-params 10,23,16,4095 /path/to/repo::small /smallstuff
+
+# Backup a raw device (must not be active/in use/mounted at that time)
+$ dd if=/dev/sdx bs=10M | borg create /path/to/repo::my-sdx -
+
+# No compression (default)
+borg create /path/to/repo::arch ~
+
+# Super fast, low compression
+borg create --compression lz4 /path/to/repo::arch ~
+
+# Less fast, higher compression (N = 0..9)
+borg create --compression zlib,N /path/to/repo::arch ~
+
+# Even slower, even higher compression (N = 0..9)
+borg create --compression lzma,N /path/to/repo::arch ~
+
+# Use short hostname, user name and current time in archive name
+borg create /path/to/repo::{hostname}-{user}-{now} ~
+# Similar, use the same datetime format as borg 1.1 will have as default
+borg create /path/to/repo::{hostname}-{user}-{now:%Y-%m-%dT%H:%M:%S} ~
+# As above, but add nanoseconds
+borg create /path/to/repo::{hostname}-{user}-{now:%Y-%m-%dT%H:%M:%S.%f} ~
+</code></pre>
+<h2 id="borg-extract">
+  borg extract
+  <a class="anchor" href="#borg-extract">#</a>
+</h2>
+<p>This command extracts the contents from an archive and writes in the current directory.</p>
+<pre><code># Extract entire archive
+borg extract /path/to/repo::my-files
+
+# Extract entire archive and list files while processing
+borg extract -v --list /path/to/repo::my-files
+
+# Extract the &quot;src&quot; directory
+borg extract /path/to/repo::my-files home/USERNAME/src
+
+# Extract the &quot;src&quot; directory but exclude object files
+borg extract /path/to/repo::my-files home/USERNAME/src --exclude '*.o'
+
+# Restore a raw device (must not be active/in use/mounted at that time)
+borg extract --stdout /path/to/repo::my-sdx | dd of=/dev/sdx bs=10M
+</code></pre>
+<h2 id="borg-check">
+  borg check
+  <a class="anchor" href="#borg-check">#</a>
+</h2>
+<p>The check command verifies the consistency of a repository and the corresponding archives.</p>
+<pre><code># check for corrupt chunks / segments:
+borg check -v --repository-only REPO
+# repair the repo:
+borg check -v --repository-only --repair REPO
+# make sure everything is fixed:
+borg check -v --repository-only REPO
+</code></pre>
+<h1 id="borg-rename">
+  borg rename
+  <a class="anchor" href="#borg-rename">#</a>
+</h1>
+<p>This command renames an archive in the repository.</p>
+<pre><code>borg create /path/to/repo::archivename ~
+borg list /path/to/repo archivename
+borg rename /path/to/repo::archivename newname
+borg list /path/to/repo/newname
+</code></pre>
+<h2 id="borg-list">
+  borg list
+  <a class="anchor" href="#borg-list">#</a>
+</h2>
+<p>This command lists the contents of a repository or an archive.</p>
+<pre><code>borg list /path/to/repository
+borg list /path/to/repo::root-2017-03-06
+borg list /path/to/repo::archiveA --list-format=&quot;{mode} {user:6} {group:6} {size:8d} {isomtime} {path}{extra}{NEWLINE}&quot;
+# see what is changed between archives, based on file modification time, size and file path
+borg list /path/to/repo::archiveA --list-format=&quot;{mtime:%s}{TAB}{size}{TAB}{path}{LF}&quot; |sort -n &gt; /tmp/list.archiveA
+borg list /path/to/repo::archiveB --list-format=&quot;{mtime:%s}{TAB}{size}{TAB}{path}{LF}&quot; |sort -n &gt; /tmp/list.archiveB
+$ diff -y /tmp/list.archiveA /tmp/list.archiveB
+</code></pre>
+<h1 id="borg-delete">
+  borg delete
+  <a class="anchor" href="#borg-delete">#</a>
+</h1>
+<p>This command deletes an archive from the repository or the complete repository. Disk space is reclaimed accordingly. If you delete the complete repository, the local cache for it (if any) is also deleted.</p>
+<pre><code># delete a single backup archive:
+borg delete /path/to/repo::Monday
+
+# delete the whole repository and the related local cache:
+borg delete /path/to/repo
+</code></pre>
+<h2 id="borg-prune">
+  borg prune
+  <a class="anchor" href="#borg-prune">#</a>
+</h2>
+<p>The prune command prunes a repository by deleting all archives not matching any of the specified retention options. This command is normally used by automated backup scripts wanting to keep a certain number of historic borg backup.</p>
+<pre><code># Keep 7 end of day and 4 additional end of week archives.
+# Do a dry-run without actually deleting anything.
+borg prune -v --list --dry-run --keep-daily=7 --keep-weekly=4 /path/to/repo
+
+# Same as above but only apply to archive names starting with the hostname
+# of the machine followed by a &quot;-&quot; character:
+borg prune -v --list --keep-daily=7 --keep-weekly=4 --prefix='{hostname}-' /path/to/repo
+
+# Keep 7 end of day, 4 additional end of week archives,
+# and an end of month archive for every month:
+borg prune -v --list --keep-daily=7 --keep-weekly=4 --keep-monthly=-1 /path/to/repo
+
+# Keep all backups in the last 10 days, 4 additional end of week archives,
+# and an end of month archive for every month:
+borg prune -v --list --keep-within=10d --keep-weekly=4 --keep-monthly=-1 /path/to/repo
+</code></pre>
+<h2 id="borg-info">
+  borg info
+  <a class="anchor" href="#borg-info">#</a>
+</h2>
+<p>This command displays some detailed information about the specified archive.</p>
+<pre><code>borg info /path/to/repo::root-2017-03-06
+</code></pre>
+<h2 id="borg-mount">
+  borg mount
+  <a class="anchor" href="#borg-mount">#</a>
+</h2>
+<p>This command mounts an archive as a FUSE filesystem. This can be useful for browsing an archive or restoring individual files.</p>
+<pre><code>borg mount /path/to/repo::root-2017-03-06 /tmp/mymountpoint
+$ ls /tmp/mymountpoint
+</code></pre>
+<h2 id="borg-umount">
+  borg umount
+  <a class="anchor" href="#borg-umount">#</a>
+</h2>
+<p>This command un-mounts a FUSE filesystem that was mounted with borg mount.</p>
+<pre><code>borg umount /tmp/mymountpoint
+</code></pre>
+<h2 id="borg-key-export">
+  borg key export
+  <a class="anchor" href="#borg-key-export">#</a>
+</h2>
+<p>If repository encryption is used, the repository is inaccessible without the key. This command allows to backup this essential key.</p>
+<pre><code>borg key export /path/to/repo /path/to/export
+</code></pre>
+<h2 id="borg-key-import">
+  borg key import
+  <a class="anchor" href="#borg-key-import">#</a>
+</h2>
+<p>This command allows restore a key previously backed up with the export command.</p>
+<pre><code>borg key import /path/to/repo /path/to/import
+</code></pre>
+<h2 id="borg-change-passphrase">
+  borg change-passphrase
+  <a class="anchor" href="#borg-change-passphrase">#</a>
+</h2>
+<p>The key files used for repository encryption are optionally passphrase protected. This command can be used to change this passphrase.</p>
+<h1 id="create-a-key-file-protected-repository">
+  Create a key file protected repository
+  <a class="anchor" href="#create-a-key-file-protected-repository">#</a>
+</h1>
+<pre><code>borg init --encryption=keyfile -v /path/to/repo
+</code></pre>
+<h1 id="change-key-file-passphrase">
+  Change key file passphrase
+  <a class="anchor" href="#change-key-file-passphrase">#</a>
+</h1>
+<pre><code>borg change-passphrase -v /path/to/repo
+</code></pre>
+<h2 id="borg-break-lock">
+  borg break-lock
+  <a class="anchor" href="#borg-break-lock">#</a>
+</h2>
+<p>This command breaks the repository and cache locks. Please use carefully and only while no borg process (on any machine) is trying to access the Cache or the Repository.</p>
+<pre><code>borg break-lock /path/to/repo
+</code></pre>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/tonoriesco/doc/commit/1e0894cbd9f625b810fbce85acbce694f7533861" title='Last modified by Tono Riesco | 13 November 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>13 November 2020</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/tonoriesco/doc/edit/main/content//docs/backup/borg/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#main-features-of-borg-backup">Main features of Borg Backup</a>
+      <ul>
+        <li><a href="#space-efficient-storage">Space efficient storage</a></li>
+        <li><a href="#speed">Speed</a></li>
+        <li><a href="#data-encryption">Data encryption</a></li>
+        <li><a href="#compression">Compression</a></li>
+        <li><a href="#off-site-backups">Off-site backups</a></li>
+        <li><a href="#backups-mountable-as-filesystems">Backups mountable as filesystems</a></li>
+        <li><a href="#free-and-open-source-software">Free and Open Source Software</a></li>
+      </ul>
+    </li>
+    <li><a href="#install-borg">Install Borg</a></li>
+    <li><a href="#usages-of-borg">Usages of Borg</a>
+      <ul>
+        <li><a href="#borg-init">borg init</a></li>
+        <li><a href="#borg-create">borg create</a></li>
+        <li><a href="#borg-extract">borg extract</a></li>
+        <li><a href="#borg-check">borg check</a></li>
+      </ul>
+    </li>
+    <li><a href="#borg-rename">borg rename</a>
+      <ul>
+        <li><a href="#borg-list">borg list</a></li>
+      </ul>
+    </li>
+    <li><a href="#borg-delete">borg delete</a>
+      <ul>
+        <li><a href="#borg-prune">borg prune</a></li>
+        <li><a href="#borg-info">borg info</a></li>
+        <li><a href="#borg-mount">borg mount</a></li>
+        <li><a href="#borg-umount">borg umount</a></li>
+        <li><a href="#borg-key-export">borg key export</a></li>
+        <li><a href="#borg-key-import">borg key import</a></li>
+        <li><a href="#borg-change-passphrase">borg change-passphrase</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-key-file-protected-repository">Create a key file protected repository</a></li>
+    <li><a href="#change-key-file-passphrase">Change key file passphrase</a>
+      <ul>
+        <li><a href="#borg-break-lock">borg break-lock</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

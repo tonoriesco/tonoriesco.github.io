@@ -2,6 +2,8 @@
 # Always put it on the top of the configuration file, otherwise it won't work
 # googleAnalytics = "UA-XXXXXXXXX-X"
 
+publishDir = "docs"
+
 baseURL = "https://tonoriesco.github.io"
 title = ""
 theme = "book"
