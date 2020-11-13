@@ -21,6 +21,6 @@ Checking around I found HUGO. I liked the idea of putting the notes *easily* in 
 I've been playing around with themes, etc, trying to understand how it works. I was closed to abandon when I
 found this theme that makes me see HUGO much simpler. 
 
-Now, it's been hosting in github.io, really nice.
+Now, it's been hosting in github.io, really nice. I can edit from my iPad ;-)
 
 So, here we go!!
