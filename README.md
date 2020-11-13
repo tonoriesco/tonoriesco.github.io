@@ -1,6 +1,6 @@
 # Documentation
 
-Repo for the website <https://riesco.eu>
+Repo for the website <https://tonoriesco.github.io>
 
 Built with HUGO using docker.
     # docker-compose up -d
