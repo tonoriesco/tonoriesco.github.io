@@ -7,13 +7,14 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
 #hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+printf "First, we pull for changes"
+
+git pull
 
 docker run --rm -it \
   -v $(pwd):/src \
   klakegg/hugo:0.78.1-ext-ubuntu
 
-# Go To Public folder
-cd public
 
 # Add changes to git.
 git add .

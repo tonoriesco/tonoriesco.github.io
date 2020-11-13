@@ -19,4 +19,8 @@ using DIVI for the formatting, adding a simple page takes sometimes hours.
 
 Checking around I found HUGO. I liked the idea of putting the notes *easily* in the web.
 I've been playing around with themes, etc, trying to understand how it works. I was closed to abandon when I
-found this theme that makes me see HUGO much simpler. So, here we go!!
+found this theme that makes me see HUGO much simpler. 
+
+Now, it's been hosting in github.io, really nice.
+
+So, here we go!!
