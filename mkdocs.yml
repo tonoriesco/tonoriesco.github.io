@@ -1,6 +1,6 @@
 site_name: Tono Riesco
 site_description: Tono's Blog
-site_url: https://riesco.eu
+site_url: https://tonoriesco.github.io
 
 theme:
   name: material
