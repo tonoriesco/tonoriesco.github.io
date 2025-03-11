@@ -1,0 +1,10 @@
+site_name: Tono Riesco
+site_description: Tono's Blog
+site_url: https://riesco.eu
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - blog
